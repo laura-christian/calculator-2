@@ -17,8 +17,7 @@ def prefix_calculator():
         nums = [int(x) for x in tokenize[1:]]
 
         if operator == "q" :
-            print "You will exit"
-            break
+            return "You have exited the calculator!"
         elif operator == "+":
             total = add(nums[0], nums[1])
             print total
@@ -32,5 +31,17 @@ def prefix_calculator():
             quotient = divide(nums[0], nums[1])
             print quotient
         elif operator == "square":
-            squared = square(nums[0], nums[1])
+            squared = square(nums[0])
             print squared
+        elif operator == "cube":
+            cubed = cube(nums[0])
+            print cubed
+        elif operator == "pow":
+            exponent = power(nums[0], nums[1])
+            print exponent
+        elif operator == "mod":
+            remainder = mod(nums[0], nums[1])
+            print remainder
+
+
+print prefix_calculator()
