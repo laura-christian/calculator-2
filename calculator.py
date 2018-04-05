@@ -17,31 +17,20 @@ def prefix_calculator():
         nums = [float(x) for x in split_input[1:]]
 
         if operator == "q":
-            return "You have exited the calculator!"
+            print "You have exited the calculator!"
+            return
         elif operator == "+":
-            total = add(nums)
-            print total
+            print add(nums)
         elif operator == "-":
-            difference = subtract(nums)
-            print difference
+            print subtract(nums)
         elif operator == "*":
-            product = multiply(nums)
-            print product
+            print multiply(nums)
         elif operator == "/":
-            quotient = divide(nums)
-            print quotient
-        elif operator == "square":
-            squared = square(nums[0])
-            print squared
-        elif operator == "cube":
-            cubed = cube(nums[0])
-            print cubed
+            print divide(nums)
         elif operator == "pow":
-            exponent = power(nums[0], nums[1])
-            print exponent
+            print power(nums)
         elif operator == "mod":
-            remainder = mod(nums[0], nums[1])
-            print remainder
+            print mod(nums)
 
 
-print prefix_calculator()
+prefix_calculator()
