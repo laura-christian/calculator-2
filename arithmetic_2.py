@@ -12,4 +12,9 @@ def multiply(array):
 def divide(array):
     return reduce(lambda x,y: x/y, array)
 
+def power(array):
+    return reduce(lambda x,y: x**y, array)
+
+def mod(array):
+    return reduce(lambda x,y: x % y, array)
 
